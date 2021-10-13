@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1EEEE"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:animateLayoutChanges="true"
+        android:scrollbars="none"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <com.smarteist.autoimageslider.SliderLayout
+                android:id="@+id/imageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical">
+
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="200dp"
+                       android:layout_below="@id/imageSlider"
+                       android:scaleType="centerCrop"
+                       android:src="@drawable/grocery2"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/black"
+                       android:layout_gravity="center"
+                       android:text="Grocery"
+                       android:textStyle="bold"
+                       android:textSize="22sp"
+                       android:paddingBottom="10dp"/>
+
+               </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_below="@id/imageSlider"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/electronic"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:text="Electronic"
+                        android:textStyle="bold"
+                        android:textSize="22sp"
+                        android:paddingBottom="10dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#2e86de"
+                android:paddingLeft="5dp"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:text="Featured Products"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/productRecyclerview"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#2e86de"
+                android:paddingLeft="5dp"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:text="Sale Featured Products"/>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="200dp"
+                android:layout_height="300dp"
+                android:layout_margin="5dp">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="vertical">
+
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="0dp"
+                           android:layout_weight="7"
+                           android:layout_marginTop="5dp"
+                           android:src="@drawable/jeans"
+                           android:id="@+id/itemImage"/>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="0dp"
+                           android:layout_weight="1"
+                           android:textColor="@color/purple_700"
+                           android:text="Jeans"
+                           android:layout_marginTop="5dp"
+                           android:layout_marginLeft="5dp"
+                           android:textStyle="bold"
+                           android:textSize="22sp"
+                           android:id="@+id/itemProduct"
+                           />
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="0dp"
+                           android:layout_weight="1"
+                           android:textColor="@color/purple_700"
+                           android:text="Rs. 699"
+                           android:layout_marginTop="5dp"
+                           android:layout_marginLeft="5dp"
+                           android:textSize="20sp"
+                           android:id="@+id/itemPrice"
+                           android:layout_marginBottom="5dp"
+                           />
+
+                   </LinearLayout>
+
+                   <ImageView
+                       android:layout_width="50dp"
+                       android:layout_height="100dp"
+                       android:src="@drawable/sale"
+                       android:layout_alignParentTop="true"/>
+               </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.rk.social.study.network.ecommerceapp.ui.home.HomeFragment"
+        android:label="eCommerce"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/sale"
+        android:name="com.rk.social.study.network.ecommerceapp.ui.Sale.Sale"
+        android:label="Sale"
+        tools:layout="@layout/fragment_sale" />
+
+    <fragment
+        android:id="@+id/filter"
+        android:name="com.rk.social.study.network.ecommerceapp.ui.Filter.Filter"
+        android:label="Filter"
+        tools:layout="@layout/fragment_filter" />
+
+    <fragment
+        android:id="@+id/new_arrivals"
+        android:name="com.rk.social.study.network.ecommerceapp.ui.New_Arrivals"
+        android:label="New Arrivals"
+        tools:layout="@layout/fragment_new__arrivals" />
+
+    <fragment
+        android:id="@+id/my_account"
+        android:name="com.rk.social.study.network.ecommerceapp.ui.New_Arrivals"
+        android:label="My Account"
+        tools:layout="@layout/fragment_filter" />
+
+    <fragment
+        android:id="@+id/cart"
+        android:name="com.rk.social.study.network.ecommerceapp.ui.New_Arrivals"
+        android:label="Cart"
+        tools:layout="@layout/fragment_filter" />
+
+    <fragment
+        android:id="@+id/notification"
+        android:name="com.rk.social.study.network.ecommerceapp.ui.New_Arrivals"
+        android:label="Notifications"
+        tools:layout="@layout/fragment_filter" />
+
+
+</navigation>
